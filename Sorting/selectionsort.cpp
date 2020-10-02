@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 void SelectionSort (int arr[], int n)
 {
@@ -8,9 +8,7 @@ void SelectionSort (int arr[], int n)
 		for (j = i+1; j < n; ++j){
 			if (arr[i] > arr[j])
 			{
-				arr[i] = arr[i]+arr[j];
-				arr[j] = arr[i]-arr[j];
-				arr[i] = arr[i]-arr[j];
+				swap(arr[i],arr[j]);
 			}	
 		}
     }
